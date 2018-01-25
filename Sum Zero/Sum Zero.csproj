@@ -287,7 +287,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\ClickTile.cs" />
     <Compile Include="Assets\Scripts\FrameManager.cs" />
-    <Compile Include="Assets\WinMessage.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

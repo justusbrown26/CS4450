@@ -5,6 +5,7 @@ using UnityEngine;
 public class FrameManager : MonoBehaviour {
 
 	static public GameObject[] tileArray = new GameObject[8];
+    public GameObject winMessage;
 	private bool gameStarted = false;
 	private int countOpen, sum;
 	private int[] chosenTile = new int[] { -1, -1, -1 };
@@ -25,8 +26,8 @@ public class FrameManager : MonoBehaviour {
 			gameStarted = true;
 			MakeSolution();
 		}
-		else
-		{
+		//else if (chosenTile[0] != -1)
+		//{
 			if(countOpen == 3)
 			{
 				if (timeLeftToClose == 0)
@@ -38,7 +39,7 @@ public class FrameManager : MonoBehaviour {
 					timeLeftToClose--;
 				}
 			}
-		}
+		//}
 	}
 
 	// Makes sure that the game has at least one solution
@@ -95,7 +96,8 @@ public class FrameManager : MonoBehaviour {
 		{
 			if(sum == 0)
 			{
-				GameWon();
+                OpenAllTiles();
+				StartCoroutine(GameWon());
 			}
 		}
 		Debug.Log("Clicked tile: " + id + " with number: " + number);
@@ -115,13 +117,25 @@ public class FrameManager : MonoBehaviour {
 		}
 	}
 
-	private void GameWon()
+    private void OpenAllTiles()
+    {
+        foreach (var tile in tileArray)
+        {
+            tile.GetComponent<SpriteRenderer>().sprite = tile.GetComponent<ClickTile>().tileOpen;
+            tile.GetComponentInChildren<TextMesh>().text = "" + tile.GetComponent<ClickTile>().myNumber;
+        }
+    }
+
+	private IEnumerator GameWon()
 	{
-		foreach (var tile in tileArray)
+
+        yield return new WaitForSeconds(1.5f);
+        foreach (var tile in tileArray)
 		{
 			tile.GetComponent<ClickTile>().gameObject.SetActive(false);
 		}
 		gameObject.SetActive(false);
+        winMessage.SetActive(true);
 		
 	}
 }
