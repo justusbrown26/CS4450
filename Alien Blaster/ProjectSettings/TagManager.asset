@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Target
+  - EnemyShip
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BackGround
+    uniqueID: 1576501283
+    locked: 0
+  - name: Friends and Enemies
+    uniqueID: 1265253715
+    locked: 0
+  - name: Thrust
+    uniqueID: 859554883
+    locked: 0
+  - name: Player
+    uniqueID: 3661814313
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
