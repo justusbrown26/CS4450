@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperSoyBoy", "SuperSoyBoy.csproj", "{81EC721A-1622-210F-1270-EBA0F794DC08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperSoyBoy.Editor", "SuperSoyBoy.Editor.csproj", "{D3ADAAF0-CE26-50FA-DA8F-AD9C91D5DD65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{81EC721A-1622-210F-1270-EBA0F794DC08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81EC721A-1622-210F-1270-EBA0F794DC08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81EC721A-1622-210F-1270-EBA0F794DC08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3ADAAF0-CE26-50FA-DA8F-AD9C91D5DD65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3ADAAF0-CE26-50FA-DA8F-AD9C91D5DD65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3ADAAF0-CE26-50FA-DA8F-AD9C91D5DD65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3ADAAF0-CE26-50FA-DA8F-AD9C91D5DD65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
